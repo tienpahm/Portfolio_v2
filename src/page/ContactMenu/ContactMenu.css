@@ -1,0 +1,46 @@
+.contactMenu-container .contactMenu-content .contact-card {
+  color: white;
+  padding: 20px 20px;
+}
+.contactMenu-container {
+  position: fixed;
+  left: 0;
+  top: 30%;
+}
+.contact-card {
+  transform: translateX(-60%);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+}
+.contactMenu-content .active {
+  transform: translateX(0);
+}
+.contactMenu-content .deactive {
+  transform: translateX(-65%);
+}
+.contact-card a {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.contact-card a i {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+.linkedin {
+  background-color: #0077b5;
+}
+.github {
+  background-color: #333;
+}
+.email {
+  background-color: #6fc2b0;
+}
+.resume {
+  background-color: #565f69;
+}

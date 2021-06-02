@@ -1,0 +1,85 @@
+.char {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  transition: 0.1s;
+  overflow: hidden;
+  font-size: 2rem;
+}
+@keyframes rotate {
+  from {
+    transform: translateX(50px) rotate(17deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+.home {
+  animation: rotate 0.5s forwards;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+.home-content {
+  margin-bottom: 15%;
+}
+.home-content .greeting p {
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 0;
+  font-weight: 1000;
+  letter-spacing: 4px;
+}
+.home-content .introduction {
+  width: 115ch;
+}
+
+.char-sub {
+  position: absolute;
+  top: 50px;
+  transition: all 0.1s 2s;
+  color: pink;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.char-main {
+  position: relative;
+  transition: all 0.5s;
+  top: 0;
+  cursor: default;
+  color: #94a4b4;
+}
+/* .char:hover .char-main {
+  top: -20px;
+} */
+.active {
+  top: -50px;
+}
+.active + .char-sub {
+  top: 0;
+}
+/*button*/
+.btn-project {
+  margin-top: 8%;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+.btn-project:hover {
+  background-color: white;
+  color: pink;
+  border-color: white;
+}

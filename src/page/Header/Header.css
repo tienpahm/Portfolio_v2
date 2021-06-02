@@ -1,0 +1,34 @@
+.header-container {
+  color: #94a4b4;
+}
+.header-content {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* #94a4b4 */
+.header-container .header-content .logo {
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(pink, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header-container .header-content .logo span {
+  font-size: 5rem;
+}
+.nav-menu {
+  margin-right: 5%;
+}
+.nav-menu a {
+  color: #94a4b4;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.nav-menu a:hover {
+  color: white;
+}
