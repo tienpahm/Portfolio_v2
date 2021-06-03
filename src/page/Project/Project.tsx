@@ -20,7 +20,10 @@ export default function Project(props: any) {
               <p className="bugtify name">
                 BUGTIFY<span>.</span>
               </p>
-              <button className="btn-projects">
+              <button
+                className="btn-projects"
+                data-toggle="modal"
+                data-target="#bugtifyModal">
                 <i className="fa fa-eye"></i>View Projects
               </button>
             </div>
@@ -33,7 +36,10 @@ export default function Project(props: any) {
                   alt="hondalogo"
                 />
               </p>
-              <button className="btn-projects">
+              <button
+                className="btn-projects"
+                data-toggle="modal"
+                data-target="#hondaModal">
                 <i className="fa fa-eye"></i>View Projects
               </button>
             </div>
@@ -43,7 +49,10 @@ export default function Project(props: any) {
               <p className="portfolio name">
                 <span>T</span>ien
               </p>
-              <button className="btn-projects">
+              <button
+                className="btn-projects"
+                data-toggle="modal"
+                data-target="#portfolioModal">
                 <i className="fa fa-eye"></i>View Projects
               </button>
             </div>

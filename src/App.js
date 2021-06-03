@@ -6,11 +6,13 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Project from "./page/Project/Project";
 import Footer from "./page/Footer/Footer";
 import ContactMenu from "./page/ContactMenu/ContactMenu";
+import Modal from "./Component/ModalContent/Modal";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Modal />
         <Header />
         <ContactMenu />
         <Switch>

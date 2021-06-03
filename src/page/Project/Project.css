@@ -1,5 +1,4 @@
 .project-container {
-  height: 100%;
 }
 .project-content {
   width: 70%;
@@ -47,8 +46,8 @@
 .project-items:hover .name {
   opacity: 1;
 }
-.project-items .bugtify,
-.project-items .portfolio {
+.bugtify,
+.portfolio {
   font-size: 7rem;
   margin-bottom: 0;
 }
