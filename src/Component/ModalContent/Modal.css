@@ -1,0 +1,76 @@
+.project-modal .modal-dialog {
+  max-width: 50%;
+  border-radius: 5px;
+}
+.project-modal .modal {
+  top: 50%;
+  transform: translateY(-30%);
+}
+.project-modal .modal-content {
+  background-color: pink;
+}
+.project-modal .project-logo {
+  background-color: #222327;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+.project-logo .portfolio {
+  background: linear-gradient(pink, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.project-info {
+  color: #94a4b4;
+  background-color: #343a41;
+  padding: 20px 15px;
+}
+.project-header {
+  display: flex;
+  justify-content: space-between;
+}
+.project-header span {
+  font-size: 1.1rem;
+}
+.project-header h2 {
+  color: white;
+}
+.project-header i {
+  font-size: 2rem;
+}
+.project-skills {
+  margin-bottom: 20px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.project-skills span {
+  padding: 5px;
+  border: 1px solid #22262a;
+  margin: 0 10px 10px 0;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  display: inline-block;
+}
+@font-face {
+  font-family: Inconsolate, sans-serif;
+  src: url(../../assets/font/Inconsolata.ttf);
+}
+.project-about .about-content {
+  font-family: Inconsolate;
+  letter-spacing: 0.7px;
+  max-height: 250px;
+  overflow: auto;
+}
+.project-about span {
+  font-size: 1.1rem;
+}
+.project-btn {
+  margin: 30px 0;
+}
+.project-btn .btn-project {
+  font-size: 1rem;
+  padding: 2px 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
