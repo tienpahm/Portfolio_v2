@@ -8,15 +8,27 @@ export default function Project(props: any) {
     <div className="project-container">
       <div className="project-content">
         <div className="project-title">
-          <h2>Projects</h2>
-          <p>
-            // These are my favorite projects I've worked on for the past year.
-            Have a look around and make sure to hit me up!
-          </p>
+          <h4>Projects</h4>
         </div>
         <div className="projects row">
-          <div className="col-6">
-            <div className="project-items">
+          <div className="col-12 col-md-6">
+            <div className="project-items project-items-event">
+              <p className="honda name">
+                <img
+                  src={require("../../assets/img/eventlogo.webp").default}
+                  alt="eventlogo"
+                />
+              </p>
+              <button
+                className="btn-projects"
+                data-toggle="modal"
+                data-target="#eventModal">
+                View Projects
+              </button>
+            </div>
+          </div>
+          <div className="col-12 col-md-6">
+            <div className="project-items project-items-bugitfy">
               <p className="bugtify name">
                 BUGTIFY<span>.</span>
               </p>
@@ -24,12 +36,12 @@ export default function Project(props: any) {
                 className="btn-projects"
                 data-toggle="modal"
                 data-target="#bugtifyModal">
-                <i className="fa fa-eye"></i>View Projects
+                View Projects
               </button>
             </div>
           </div>
-          <div className="col-6">
-            <div className="project-items">
+          <div className="col-12 col-md-6">
+            <div className="project-items project-items-honda">
               <p className="honda name">
                 <img
                   src={require("../../assets/img/hondalogo.png").default}
@@ -40,20 +52,24 @@ export default function Project(props: any) {
                 className="btn-projects"
                 data-toggle="modal"
                 data-target="#hondaModal">
-                <i className="fa fa-eye"></i>View Projects
+                View Projects
               </button>
             </div>
           </div>
-          <div className="col-6">
-            <div className="project-items">
+          <div className="col-12 col-md-6 ">
+            <div className="project-items project-items-portfolio">
               <p className="portfolio name">
-                <span>T</span>ien
+                <img
+                  style={{minWidth: "150px"}}
+                  src={require("../../assets/img/logo.png").default}
+                  alt="portfoliologo"
+                />
               </p>
               <button
                 className="btn-projects"
                 data-toggle="modal"
                 data-target="#portfolioModal">
-                <i className="fa fa-eye"></i>View Projects
+                View Projects
               </button>
             </div>
           </div>

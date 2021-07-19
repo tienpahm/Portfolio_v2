@@ -12,7 +12,7 @@ export default function Modal() {
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="row">
-                <div className="col-6 project-logo">
+                <div className="col-6 project-logo project-items-bugitfy">
                   <p className="bugtify">
                     BUGTIFY<span style={{color: "#7149fc"}}>.</span>
                   </p>
@@ -91,11 +91,11 @@ export default function Modal() {
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="row">
-                <div className="col-6 project-logo">
+                <div className="col-6 project-logo project-items-honda">
                   <img
                     src={require("../../assets/img/hondalogo.png").default}
                     alt="hondalogo"
-                    className="w-75"
+                    className="w-50"
                   />
                 </div>
                 <div className="col-6 project-info">
@@ -172,6 +172,81 @@ export default function Modal() {
         </div>
       </div>
       <div className="project-modal">
+        <div className="modal fade" id="eventModal" tabIndex={-1} role="dialog">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="row">
+                <div className="col-6 project-logo project-items-event">
+                  <img
+                    src={require("../../assets/img/eventlogo.webp").default}
+                    alt="eventlogo"
+                    className="w-50"
+                  />
+                </div>
+                <div className="col-6 project-info">
+                  <div className="project-header">
+                    <div className="project-header-text">
+                      <span>Project</span>
+                      <h2>Event Cinema</h2>
+                    </div>
+                    <div
+                      className="project-header-btn"
+                      data-dismiss="modal"
+                      style={{cursor: "pointer"}}>
+                      <i className="fa fa-times"></i>
+                    </div>
+                  </div>
+                  <div className="project-skills">
+                    <span>HTML & CSS</span>
+                    <span>JAVASCRIPT</span>
+                    <span>REACT</span>
+                    <span>Redux</span>
+                    <span>REST API</span>
+                    <span>Tailwindcss</span>
+                    <span>Responsive</span>
+                  </div>
+                  <div className="project-about">
+                    <span>About</span>
+                    <div className="about-content mt-4">
+                      Event Cinema is an project which inspire from Event Cinema
+                      Australia in which I build an end to end system where
+                      stimulate the process where user booking their movie
+                      <br />
+                      <br />
+                      Event Cinema webpage is my fourth project due to
+                      experience from other project . I am now be able to handle
+                      most problem was created . In this project , Beside
+                      improving my skills of calling API effeciently , I also
+                      improve UX to increase user satisfaction . In addition , I
+                      choose to use TailwindCss in this project instead of
+                      Boostrap4 because I love to learning new thing . Feel free
+                      to check out my project and hit me if you interesting .
+                      <br />
+                    </div>
+                  </div>
+                  <div className="project-btn">
+                    <a
+                      className="btn-project"
+                      href="http://eventcinemaclone.surge.sh/"
+                      target="_blank"
+                      rel="noreferrer">
+                      <i className="fa fa-eye mr-2"></i>Demo
+                    </a>
+                    <a
+                      className="btn-project"
+                      href="https://github.com/tienpahm/Cinema_Website"
+                      target="_blank"
+                      rel="noreferrer">
+                      <i className="fa fa-code mr-2"></i>Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-modal">
         <div
           className="modal fade"
           id="portfolioModal"
@@ -180,9 +255,13 @@ export default function Modal() {
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="row">
-                <div className="col-6 project-logo">
+                <div className="col-6 project-logo project-items-portfolio">
                   <p className="portfolio name">
-                    <span>T</span>ien
+                    <img
+                      style={{maxWidth: "150px"}}
+                      src={require("../../assets/img/logo.png").default}
+                      alt="portfoliologo"
+                    />
                   </p>
                 </div>
                 <div className="col-6 project-info">

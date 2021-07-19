@@ -4,7 +4,7 @@
   margin-right: 10px;
   transition: 0.1s;
   overflow: hidden;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 @keyframes rotate {
   from {
@@ -16,34 +16,44 @@
     opacity: 1;
   }
 }
+.home-overplay {
+  position: absolute;
+  z-index: 0;
+}
 .home {
-  animation: rotate 0.5s forwards;
+  /* animation: rotate 0.5s forwards; */
   text-align: center;
   display: grid;
   place-items: center;
   height: 100%;
   width: 90%;
   margin: auto;
+  position: relative;
+}
+.home-overplay img {
+  width: 100vw;
 }
 .home-content {
-  margin-bottom: 15%;
+  z-index: 1;
+  padding: 5% 0 15%;
 }
 .home-content .greeting p {
   color: white;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 0;
   font-weight: 1000;
   letter-spacing: 4px;
 }
 .home-content .introduction {
-  width: 115ch;
+  width: 71%;
+  margin: auto;
 }
 
 .char-sub {
   position: absolute;
   top: 50px;
-  transition: all 0.1s 2s;
-  color: pink;
+  transition: all 0.5s 2s;
+  color: #ffc947;
   transition: 0.5s;
   cursor: default;
 }
@@ -53,7 +63,7 @@
   transition: all 0.5s;
   top: 0;
   cursor: default;
-  color: #94a4b4;
+  color: #ffff;
 }
 /* .char:hover .char-main {
   top: -20px;
@@ -67,8 +77,8 @@
 /*button*/
 .btn-project {
   margin-top: 8%;
-  padding: 10px 20px;
-  font-size: 1.2rem;
+  padding: 8px 15px;
+  font-size: 1rem;
   background: transparent;
   color: white;
   border: 2px solid white;
@@ -80,6 +90,46 @@
 }
 .btn-project:hover {
   background-color: white;
-  color: #f52d50;
+  color: #185adb;
   border-color: white;
+}
+@media screen and (max-width: 1200px) {
+  .home-content .introduction {
+    width: 80%;
+    margin: auto;
+  }
+  .home-content .greeting p {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .char {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-content .introduction {
+    width: 90%;
+    margin: auto;
+  }
+  .home-content .greeting p {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  .char {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-content .introduction {
+    width: 90%;
+    margin: auto;
+  }
+  .home-content .greeting p {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .char {
+    font-size: 1.2rem;
+  }
 }

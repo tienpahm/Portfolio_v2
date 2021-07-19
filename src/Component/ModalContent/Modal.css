@@ -2,10 +2,7 @@
   max-width: 50%;
   border-radius: 5px;
 }
-.project-modal .modal {
-  top: 50%;
-  transform: translateY(-30%);
-}
+
 .project-modal .modal-content {
   background-color: pink;
 }
@@ -13,7 +10,15 @@
   background-color: #222327;
   color: white;
   display: grid;
+  border-radius: 10px 0 0 10px;
   place-items: center;
+}
+
+.project-logo-event {
+  background-image: linear-gradient(150deg, #ffc947 -20%, #0abac2);
+  background: url("https://paperpillar.com/assets/images/hero-pattern-bg.png"),
+    linear-gradient(150deg, #c99fff -20%, #4a4eff);
+  background-size: cover;
 }
 .project-logo .portfolio {
   background: linear-gradient(pink, white);
@@ -22,9 +27,10 @@
   font-weight: 700;
 }
 .project-info {
-  color: #94a4b4;
-  background-color: #343a41;
+  /* color: #ffff; */
+  background-color: #ffff;
   padding: 20px 15px;
+  border-radius: 0 10px 10px 0;
 }
 .project-header {
   display: flex;
@@ -33,9 +39,9 @@
 .project-header span {
   font-size: 1.1rem;
 }
-.project-header h2 {
+/* .project-header h2 {
   color: white;
-}
+} */
 .project-header i {
   font-size: 2rem;
 }
@@ -73,4 +79,44 @@
   padding: 2px 20px;
   margin-right: 20px;
   text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .project-btn {
+    text-align: center;
+  }
+  .project-btn .btn-project {
+    font-size: 1rem;
+    padding: 2px 20px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  .project-modal .modal-dialog {
+    max-width: 70%;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .project-modal .modal-dialog {
+    max-width: 80%;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-modal .modal-dialog {
+    max-width: 90%;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .project-modal .modal-dialog {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .project-btn .btn-project {
+    display: block;
+  }
 }

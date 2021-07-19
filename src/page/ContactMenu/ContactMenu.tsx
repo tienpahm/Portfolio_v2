@@ -23,7 +23,8 @@ export default function ContactMenu() {
           }}>
           <a
             href="https://www.linkedin.com/in/tien-pham-074b68187/"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             <span>Linkedin</span>
             <i className="fab fa-linkedin"></i>
           </a>
@@ -43,7 +44,10 @@ export default function ContactMenu() {
               }, 300);
             }
           }}>
-          <a href="https://github.com/tienpahm" target="_blank">
+          <a
+            href="https://github.com/tienpahm"
+            target="_blank"
+            rel="noreferrer">
             <span>Github</span>
             <i className="fab fa-github"></i>
           </a>
@@ -84,8 +88,9 @@ export default function ContactMenu() {
             }
           }}>
           <a
-            href="https://drive.google.com/file/d/1-v4ruixOPg-Y8EoR82P6X3sDJpmLxswo/view?usp=sharing"
-            target="_blank">
+            href="https://drive.google.com/file/d/1y12p2AyH98R9iG27x2ehbRa6VQe0HaIn/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer">
             <span>resume</span>
             <i className="fa fa-file"></i>
           </a>
