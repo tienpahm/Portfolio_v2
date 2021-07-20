@@ -45,3 +45,20 @@
 .resume {
   background-color: #565f69;
 }
+@media screen and (max-width: 1200px) {
+  .header-content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contactMenu-container .contactMenu-content .contact-card {
+    color: white;
+    padding: 15px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactMenu-container .contactMenu-content .contact-card {
+    color: white;
+    padding: 10px 10px;
+  }
+}

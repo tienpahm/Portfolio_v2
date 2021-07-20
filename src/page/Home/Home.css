@@ -77,7 +77,12 @@
 /*button*/
 .btn-project {
   margin-top: 8%;
-  padding: 8px 15px;
+  width: 30px;
+  height: 45px;
+  border: white 1px solid;
+  border-radius: 15px;
+  position: relative;
+  /* padding: 8px 15px;
   font-size: 1rem;
   background: transparent;
   color: white;
@@ -86,13 +91,26 @@
   font-weight: 700;
   transition: 0.3s;
   cursor: pointer;
-  outline: none;
+  outline: none; */
 }
-.btn-project:hover {
+/* .btn-project:hover {
   background-color: white;
   color: #185adb;
   border-color: white;
+} */
+.btn-project::before {
+  /* content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #ffff;
+  position: absolute;
+  top: 2px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%); */
+  /* animation: mouse 1s ease infinite 5s; */
 }
+
 @media screen and (max-width: 1200px) {
   .home-content .introduction {
     width: 80%;
@@ -112,6 +130,7 @@
     width: 90%;
     margin: auto;
   }
+
   .home-content .greeting p {
     font-size: 3rem;
     margin-bottom: 0;

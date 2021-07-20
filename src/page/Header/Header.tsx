@@ -14,10 +14,10 @@ export default function Header() {
             alt="portfoliologo"
           />
         </div>
-        <div className="nav-menu">
+        {/* <div className="nav-menu">
           <Link to="/">About</Link>
           <Link to="/project">Project</Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

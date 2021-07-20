@@ -35,3 +35,19 @@
 .nav-menu a:hover {
   color: white;
 }
+
+@media screen and (max-width: 1200px) {
+  .header-content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+  }
+}

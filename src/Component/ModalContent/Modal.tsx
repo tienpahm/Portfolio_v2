@@ -295,16 +295,16 @@ export default function Modal() {
                     </div>
                   </div>
                   <div className="project-btn">
-                    <a
+                    {/* <a
                       className="btn-project"
                       href="http://hondaclone.surge.sh/#"
                       target="_blank"
                       rel="noreferrer">
                       <i className="fa fa-eye mr-2"></i>Demo
-                    </a>
+                    </a> */}
                     <a
-                      className="btn-project"
-                      href="http://hondaclone.surge.sh/#"
+                      className="btn-project ml-0"
+                      href="https://github.com/tienpahm/Portfolio_v2"
                       target="_blank"
                       rel="noreferrer">
                       <i className="fa fa-code mr-2"></i>Code

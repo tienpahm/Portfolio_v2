@@ -2,8 +2,6 @@ import React from "react";
 import "./Project.css";
 
 export default function Project(props: any) {
-  console.log(props);
-
   return (
     <div className="project-container">
       <div className="project-content">

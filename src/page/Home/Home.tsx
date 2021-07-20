@@ -1,14 +1,11 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment} from "react";
 import "./Home.css";
 import Header from "../Header/Header";
 import Project from "../Project/Project";
 
 export default function Home(props: any) {
   const paragraph =
-    "I'M A FRONT END DEVELOPER & WEB DESIGNER CURRENTLY BASED IN SYDNEY HIT ME UP AND LET CREATE SOMETHING SPECIAL";
-  const [charState, setcharState] = useState("");
-  //   let activeChar = "char-sub";
-  let tien = "dep trai";
+    "I'M A FRONT END DEVELOPER & WEB DEVELOPER CURRENTLY BASED IN SYDNEY HIT ME UP AND LET CREATE SOMETHING SPECIAL";
 
   return (
     <Fragment>
@@ -33,21 +30,21 @@ export default function Home(props: any) {
           </div>
           <div className="home-overplay" style={{top: "20%", left: "10%"}}>
             <img
-              style={{width: "200px"}}
+              style={{width: "10vw"}}
               src="https://paperpillar.com/assets/images/hero-guy-2.png"
               alt="backgrounpicture"
             />
           </div>
           <div className="home-overplay" style={{bottom: "20%", right: "10%"}}>
             <img
-              style={{width: "200px"}}
+              style={{width: "10vw"}}
               src="https://paperpillar.com/assets/images/hero-guy-3.png"
               alt="backgrounpicture"
             />
           </div>
           <div className="home-overplay" style={{top: "20%", right: "10%"}}>
             <img
-              style={{width: "200px"}}
+              style={{width: "10vw"}}
               src="https://paperpillar.com/assets/images/hero-girl.png"
               alt="backgrounpicture"
             />
@@ -76,13 +73,10 @@ export default function Home(props: any) {
                 );
               })}
             </div>
-            <button
-              className="btn-project"
-              onClick={() => {
-                props.history.push("/project");
-              }}>
-              VIEW PROJECT
-            </button>
+            <div className="btn-project mx-auto">
+              <i className="fa fa-angle-double-down mt-2 text-white"></i>
+              {/* <i class="fa fa-angle-double-down"></i> */}
+            </div>
           </div>
         </div>
       </div>
