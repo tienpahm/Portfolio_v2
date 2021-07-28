@@ -249,6 +249,85 @@ export default function Modal() {
       <div className="project-modal">
         <div
           className="modal fade"
+          id="memoriesModal"
+          tabIndex={-1}
+          role="dialog">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="row">
+                <div className="col-6 project-logo project-items-event">
+                  <img
+                    src={require("../../assets/img/memories.png").default}
+                    alt="hondalogo"
+                    style={{width: "150px", height: "150px"}}
+                  />
+                </div>
+                <div className="col-6 project-info">
+                  <div className="project-header">
+                    <div className="project-header-text">
+                      <span>Project</span>
+                      <h2>Memories</h2>
+                    </div>
+                    <div
+                      className="project-header-btn"
+                      data-dismiss="modal"
+                      style={{cursor: "pointer"}}>
+                      <i className="fa fa-times"></i>
+                    </div>
+                  </div>
+                  <div className="project-skills">
+                    <span>HTML & CSS</span>
+                    <span>JAVASCRIPT</span>
+                    <span>MongoDB</span>
+                    <span>Express.js</span>
+                    <span>REACT</span>
+                    <span>Node.js</span>
+                    <span>Redux</span>
+                    <span>REST API</span>
+                    <span>Material UI</span>
+                    <span>Responsive</span>
+                  </div>
+                  <div className="project-about">
+                    <span>About</span>
+                    <div className="about-content mt-4">
+                      Memoreis is an app where you can store your markable time
+                      to remind you of the good old day. This app backend use
+                      mongoDB as an database , express as sever running by using
+                      node. Front end using axios as an API and caller and React
+                      library. In this project, It is a little difficult when
+                      setting thing up and organise code. However, after
+                      refactor code everything go smoothly. When making
+                      Memories, I learn how to communicate from then front to
+                      the back and build my own REST as well as deloy and update
+                      code online. Feel free to have a look. stay warm
+                      <br />
+                    </div>
+                  </div>
+                  <div className="project-btn">
+                    <a
+                      className="btn-project"
+                      href="https://memories-saver.netlify.app"
+                      target="_blank"
+                      rel="noreferrer">
+                      <i className="fa fa-eye mr-2"></i>Demo
+                    </a>
+                    <a
+                      className="btn-project"
+                      href="https://github.com/tienpahm/Memories/tree/memories-front"
+                      target="_blank"
+                      rel="noreferrer">
+                      <i className="fa fa-code mr-2"></i>Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-modal">
+        <div
+          className="modal fade"
           id="portfolioModal"
           tabIndex={-1}
           role="dialog">
