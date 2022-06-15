@@ -1,400 +1,111 @@
 import React, {Fragment} from "react";
+import ModalContainer from "./Components/ModalContainer";
 import "./Modal.css";
 export default function Modal() {
   return (
     <Fragment>
-      <div className="project-modal">
-        <div
-          className="modal fade"
-          id="bugtifyModal"
-          tabIndex={-1}
-          role="dialog">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="row">
-                <div className="col-6 project-logo project-items-bugitfy">
-                  <p className="bugtify">
-                    BUGTIFY<span style={{color: "#7149fc"}}>.</span>
-                  </p>
-                </div>
-                <div className="col-6 project-info">
-                  <div className="project-header">
-                    <div className="project-header-text">
-                      <span>Project</span>
-                      <h2>BUGTIFY</h2>
-                    </div>
-                    <div
-                      className="project-header-btn"
-                      data-dismiss="modal"
-                      style={{cursor: "pointer"}}>
-                      <i className="fa fa-times"></i>
-                    </div>
-                  </div>
-                  <div className="project-skills">
-                    <span>HTML & CSS</span>
-                    <span>JAVASCRIPT</span>
-                    <span>REACT</span>
-                    <span>Redux</span>
-                    <span>REST API</span>
-                    <span>Boostrap4</span>
-                  </div>
-                  <div className="project-about">
-                    <span>About</span>
-                    <div className="about-content mt-4">
-                      BUGTIFY is a Jira clone project in which you can create
-                      project and assign task for each member involve in project
-                      . Meanwhile , tracking , monitor and manage project
-                      progress
-                      <br />
-                      <br />
-                      BUGTIFY , for me , is a pretty big project . Therefore ,
-                      where to begin is also a problem . In addition , the order
-                      of API call can collapse each other leading to loading no
-                      data or error . Finally , because of the usage of the
-                      number of form since create each form is time consuming
-                      and uneffective
-                      <br />
-                      <br />
-                      To Deal with each problem . First of all , I starting with
-                      building the UI first and step by step apply data as well
-                      as state to it . Seconly , to avoid API problems , I use
-                      redux-saga to organize my code better also checking on
-                      every step that I made to optimize it . Finally , to reuse
-                      form , template , etc ... I create HOC which is a great
-                      way to component recycle
-                    </div>
-                  </div>
-                  <div className="project-btn">
-                    <a
-                      className="btn-project"
-                      href="http://bugtifyapp.surge.sh/"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-eye mr-2"></i>Demo
-                    </a>
-                    <a
-                      className="btn-project"
-                      href="https://github.com/tienpahm/Jira_phamtien"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-code mr-2"></i>Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-modal">
-        <div className="modal fade" id="hondaModal" tabIndex={-1} role="dialog">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="row">
-                <div className="col-6 project-logo project-items-honda">
-                  <img
-                    src={require("../../assets/img/hondalogo.png").default}
-                    alt="hondalogo"
-                    className="w-50"
-                  />
-                </div>
-                <div className="col-6 project-info">
-                  <div className="project-header">
-                    <div className="project-header-text">
-                      <span>Project</span>
-                      <h2>Honda</h2>
-                    </div>
-                    <div
-                      className="project-header-btn"
-                      data-dismiss="modal"
-                      style={{cursor: "pointer"}}>
-                      <i className="fa fa-times"></i>
-                    </div>
-                  </div>
-                  <div className="project-skills">
-                    <span>HTML & CSS</span>
-                    <span>JAVASCRIPT</span>
-                    <span>JQuery</span>
-                    <span>SASS</span>
-                    <span>Boostrap4</span>
-                    <span>Responsive</span>
-                  </div>
-                  <div className="project-about">
-                    <span>About</span>
-                    <div className="about-content mt-4">
-                      Honda Hompage is an UI clone in which I practice how to
-                      set up UI layout and organize section . In addition ,
-                      building this site help me to practice my responsive skill
-                      as well .
-                      <br />
-                      <br />
-                      This is the first project that I have ever made . At the
-                      begining , Due to the lacking of experiences , I felt
-                      overwhelming cause the amount of task that I need to do .
-                      Moreover , first time apply JavaScript to UI is also a
-                      challenge for me . Finally , how to effective responsive a
-                      website is a knowledge that take me a lot of time to
-                      understand.
-                      <br />
-                      <br />
-                      To begin with , I tackle the mount of task by devide it
-                      into small task and set up a plan for every day basic ;
-                      therefore , I know where to start and what I achieve in
-                      that day . Secondly , to effectively apply JS into UI , I
-                      watch the tutorial carefully as well as search for
-                      documents and problems on Internet try my best to solve
-                      the problem by myself without watching the answer .
-                      Finally , to responsive website I watch the official site
-                      end to end , pixel by pixel to look for how they
-                      responsive it .
-                    </div>
-                  </div>
-                  <div className="project-btn">
-                    <a
-                      className="btn-project"
-                      href="http://hondaclone.surge.sh/#"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-eye mr-2"></i>Demo
-                    </a>
-                    <a
-                      className="btn-project"
-                      href="https://github.com/tienpahm/Honda_Homepage"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-code mr-2"></i>Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-modal">
-        <div className="modal fade" id="eventModal" tabIndex={-1} role="dialog">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="row">
-                <div className="col-6 project-logo project-items-event">
-                  <img
-                    src={require("../../assets/img/eventlogo.webp").default}
-                    alt="eventlogo"
-                    className="w-50"
-                  />
-                </div>
-                <div className="col-6 project-info">
-                  <div className="project-header">
-                    <div className="project-header-text">
-                      <span>Project</span>
-                      <h2>Event Cinema</h2>
-                    </div>
-                    <div
-                      className="project-header-btn"
-                      data-dismiss="modal"
-                      style={{cursor: "pointer"}}>
-                      <i className="fa fa-times"></i>
-                    </div>
-                  </div>
-                  <div className="project-skills">
-                    <span>HTML & CSS</span>
-                    <span>JAVASCRIPT</span>
-                    <span>REACT</span>
-                    <span>Redux</span>
-                    <span>REST API</span>
-                    <span>Tailwindcss</span>
-                    <span>Responsive</span>
-                  </div>
-                  <div className="project-about">
-                    <span>About</span>
-                    <div className="about-content mt-4">
-                      Event Cinema is an project which inspire from Event Cinema
-                      Australia in which I build an end to end system where
-                      stimulate the process where user booking their movie
-                      <br />
-                      <br />
-                      Event Cinema webpage is my fourth project due to
-                      experience from other project . I am now be able to handle
-                      most problem was created . In this project , Beside
-                      improving my skills of calling API effeciently , I also
-                      improve UX to increase user satisfaction . In addition , I
-                      choose to use TailwindCss in this project instead of
-                      Boostrap4 because I love to learning new thing . Feel free
-                      to check out my project and hit me if you interesting .
-                      <br />
-                    </div>
-                  </div>
-                  <div className="project-btn">
-                    <a
-                      className="btn-project"
-                      href="http://eventcinemaclone.surge.sh/"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-eye mr-2"></i>Demo
-                    </a>
-                    <a
-                      className="btn-project"
-                      href="https://github.com/tienpahm/Cinema_Website"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-code mr-2"></i>Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-modal">
-        <div
-          className="modal fade"
-          id="memoriesModal"
-          tabIndex={-1}
-          role="dialog">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="row">
-                <div className="col-6 project-logo project-items-event">
-                  <img
-                    src={require("../../assets/img/memories.png").default}
-                    alt="hondalogo"
-                    style={{width: "150px", height: "150px"}}
-                  />
-                </div>
-                <div className="col-6 project-info">
-                  <div className="project-header">
-                    <div className="project-header-text">
-                      <span>Project</span>
-                      <h2>Memories</h2>
-                    </div>
-                    <div
-                      className="project-header-btn"
-                      data-dismiss="modal"
-                      style={{cursor: "pointer"}}>
-                      <i className="fa fa-times"></i>
-                    </div>
-                  </div>
-                  <div className="project-skills">
-                    <span>HTML & CSS</span>
-                    <span>JAVASCRIPT</span>
-                    <span>MongoDB</span>
-                    <span>Express.js</span>
-                    <span>REACT</span>
-                    <span>Node.js</span>
-                    <span>Redux</span>
-                    <span>REST API</span>
-                    <span>Material UI</span>
-                    <span>Responsive</span>
-                  </div>
-                  <div className="project-about">
-                    <span>About</span>
-                    <div className="about-content mt-4">
-                      Memoreis is an app where you can store your markable time
-                      to remind you of the good old day. This app backend use
-                      mongoDB as an database , express as sever running by using
-                      node. Front end using axios as an API and caller and React
-                      library. In this project, It is a little difficult when
-                      setting thing up and organise code. However, after
-                      refactor code everything go smoothly. When making
-                      Memories, I learn how to communicate from then front to
-                      the back and build my own REST as well as deloy and update
-                      code online. Feel free to have a look. stay warm
-                      <br />
-                    </div>
-                  </div>
-                  <div className="project-btn">
-                    <a
-                      className="btn-project"
-                      href="https://memories-saver.netlify.app"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-eye mr-2"></i>Demo
-                    </a>
-                    <a
-                      className="btn-project"
-                      href="https://github.com/tienpahm/Memories/tree/memories-front"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-code mr-2"></i>Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-modal">
-        <div
-          className="modal fade"
-          id="portfolioModal"
-          tabIndex={-1}
-          role="dialog">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="row">
-                <div className="col-6 project-logo project-items-portfolio">
-                  <p className="portfolio name">
-                    <img
-                      style={{maxWidth: "150px"}}
-                      src={require("../../assets/img/logo.png").default}
-                      alt="portfoliologo"
-                    />
-                  </p>
-                </div>
-                <div className="col-6 project-info">
-                  <div className="project-header">
-                    <div className="project-header-text">
-                      <span>Project</span>
-                      <h2>Portfolio</h2>
-                    </div>
-                    <div
-                      className="project-header-btn"
-                      data-dismiss="modal"
-                      style={{cursor: "pointer"}}>
-                      <i className="fa fa-times"></i>
-                    </div>
-                  </div>
-                  <div className="project-skills">
-                    <span>HTML & CSS</span>
-                    <span>JAVASCRIPT</span>
-                    <span>REACT</span>
-                    <span>TypeScript</span>
-                    <span>Boostrap4</span>
-                  </div>
-                  <div className="project-about">
-                    <span>About</span>
-                    <div className="about-content mt-4">
-                      The idea behind this project was to create a showcase of
-                      all my big projects for the past year. I tried to keep the
-                      UI as simple as possible without any fluff. This is a
-                      Single Page Application and is built using React and
-                      Boostrap with the BEM methodology.
-                    </div>
-                  </div>
-                  <div className="project-btn">
-                    {/* <a
-                      className="btn-project"
-                      href="http://hondaclone.surge.sh/#"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-eye mr-2"></i>Demo
-                    </a> */}
-                    <a
-                      className="btn-project ml-0"
-                      href="https://github.com/tienpahm/Portfolio_v2"
-                      target="_blank"
-                      rel="noreferrer">
-                      <i className="fa fa-code mr-2"></i>Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ModalContainer
+        id={"bugtifyModal"}
+        backgroundClass={"project-items-bugitfy"}
+        logo={
+          <p className="bugtify">
+            BUGTIFY<span style={{color: "#7149fc"}}>.</span>
+          </p>
+        }
+        name={"BUGTIFY"}
+        contents={[
+          " BUGTIFY is a Jira clone project in which you can create project and assign task for each member involve in project. Meanwhile , tracking , monitor and manage project progress",
+          "BUGTIFY , for me , is a pretty big project . Therefore , where to begin is also a problem . In addition , the order of API call can collapse each other leading to loading no data or error . Finally , because of the usage of the number of form since create each form is time consuming and uneffective",
+          " To Deal with each problem . First of all , I starting withbuilding the UI first and step by step apply data as wellas state to it . Seconly , to avoid API problems , I useredux-saga to organize my code better also checking onevery step that I made to optimize it . Finally , to reuseform , template , etc ... I create HOC which is a greatway to component recycle",
+        ]}
+        skills={[
+          "HTML & CSS",
+          "JAVASCRIPT",
+          "React",
+          "Redux",
+          "REST API",
+          "Boostrap4",
+        ]}
+        demoLink={"http://bugtifyapp.surge.sh/"}
+        codeLink={"https://github.com/tienpahm/Honda_Homepage"}
+      />
+
+      <ModalContainer
+        id={"hondaModal"}
+        backgroundClass={"project-items-honda"}
+        logo={
+          <img
+            src={require("../../assets/img/hondalogo.png").default}
+            alt="hondalogo"
+            className="w-50"
+          />
+        }
+        name={"Honda"}
+        contents={[
+          " Honda Hompage is an UI clone in which I practice how to set up UI layout and organize section . In addition , building this site help me to practice my responsive skill as well.",
+          " This is the first project that I have ever made . At the begining , Due to the lacking of experiences , I felt overwhelming cause the amount of task that I need to do . Moreover , first time apply JavaScript to UI is also a challenge for me . Finally , how to effective responsive a website is a knowledge that take me a lot of time to understand.",
+          " To begin with , I tackle the mount of task by devide it into small task and set up a plan for every day basic ; therefore , I know where to start and what I achieve in that day . Secondly , to effectively apply JS into UI , I watch the tutorial carefully as well as search for documents and problems on Internet try my best to solve the problem by myself without watching the answer . Finally , to responsive website I watch the official site end to end , pixel by pixel to look for how they responsive it.",
+        ]}
+        skills={[
+          "HTML & CSS",
+          "JAVASCRIPT",
+          "JQuery",
+          "SASS",
+          "REST API",
+          "Boostrap4",
+          "Responsive",
+        ]}
+        demoLink={"http://hondaclone.surge.sh/#"}
+        codeLink={"https://github.com/tienpahm/Jira_phamtien"}
+      />
+
+      <ModalContainer
+        id={"portfolioModal"}
+        backgroundClass={"project-items-portfolio"}
+        logo={
+          <img
+            style={{maxWidth: "150px"}}
+            src={require("../../assets/img/logo.png").default}
+            alt="portfoliologo"
+          />
+        }
+        name={"Portfolio"}
+        contents={[
+          "   The idea behind this project was to create a showcase of all my big projects for the past year. I tried to keep the UI as simple as possible without any fluff. This is a Single Page Application and is built using React and Boostrap with the BEM methodology.",
+        ]}
+        skills={[
+          "HTML & CSS",
+          "JAVASCRIPT",
+          "React",
+          "TypeScript",
+          "Boostrap4",
+        ]}
+        codeLink={"https://github.com/tienpahm/Portfolio_v2"}
+      />
+      <ModalContainer
+        id={"trello"}
+        backgroundClass={"project-items-trello"}
+        logo={
+          <img
+          style={{width: "50%"}}
+            src={require("../../assets/img/Trello.png").default}
+            alt="trelloimage"
+          />
+        }
+        name={"Trello Clone"}
+        contents={[
+          "Apply Atlassian librarie to clone Trello which allow users to manage task easily by using Drag and Drop function ",
+        ]}
+        skills={[
+          "StoryBook",
+          "TypeScript",
+          "React",
+          "Cypress",
+          "Node.js",
+          "MongoDB",
+        ]}
+        codeLink={"https://github.com/tienpahm/Trello-clone"}
+      />
     </Fragment>
   );
 }

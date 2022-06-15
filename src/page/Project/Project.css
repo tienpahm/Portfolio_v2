@@ -46,13 +46,19 @@
 .project-items-honda {
   background-image: linear-gradient(150deg, #ffc947 -20%, #0abac2);
   background: url("https://paperpillar.com/assets/images/hero-pattern-bg.png"),
-    linear-gradient(180deg, #0a1931, #185adb);
+    linear-gradient(164deg, rgba(34,193,195,1) 0%, rgba(170,45,253,1) 100%);
   background-size: cover;
 }
 .project-items-portfolio {
   background-image: linear-gradient(150deg, #ffc947 -20%, #0abac2);
   background: url("https://paperpillar.com/assets/images/hero-pattern-bg.png"),
-    linear-gradient(255deg, #ffc947, #0abac2);
+    linear-gradient(164deg, rgba(34,193,195,1) 0%, rgba(97,45,253,1) 100%);
+  background-size: cover;
+}
+.project-items-trello {
+  background-image: linear-gradient(150deg, #ffc947 -20%, #0abac2);
+  background: url("https://paperpillar.com/assets/images/hero-pattern-bg.png"),
+    radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(197,180,216,1) 50%, rgba(148,187,233,1) 100%);
   background-size: cover;
 }
 
