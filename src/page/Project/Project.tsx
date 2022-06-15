@@ -13,23 +13,6 @@ export default function Project(props: any) {
             <div className="project-items project-items-event">
               <p className="honda name">
                 <img
-                  src={require("../../assets/img/memories.png").default}
-                  alt="hondalogo"
-                  style={{width: "150px", height: "150px"}}
-                />
-              </p>
-              <button
-                className="btn-projects"
-                data-toggle="modal"
-                data-target="#memoriesModal">
-                View Projects
-              </button>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="project-items project-items-event">
-              <p className="honda name">
-                <img
                   src={require("../../assets/img/eventlogo.webp").default}
                   alt="eventlogo"
                 />
@@ -71,7 +54,23 @@ export default function Project(props: any) {
               </button>
             </div>
           </div>
-
+          <div className="col-12 col-md-6">
+            <div className="project-items project-items-event">
+              <p className="honda name">
+                <img
+                  src={require("../../assets/img/memories.png").default}
+                  alt="hondalogo"
+                  style={{width: "150px", height: "150px"}}
+                />
+              </p>
+              <button
+                className="btn-projects"
+                data-toggle="modal"
+                data-target="#memoriesModal">
+                View Projects
+              </button>
+            </div>
+          </div>
           <div className="col-12 col-md-6 ">
             <div className="project-items project-items-portfolio">
               <p className="portfolio name">
