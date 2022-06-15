@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.76ba7e68.chunk.css",
+    "main.js": "/static/js/main.103e94d0.chunk.js",
+    "main.js.map": "/static/js/main.103e94d0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4e7338c7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4e7338c7.js.map",
+    "static/js/2.22e2078b.chunk.js": "/static/js/2.22e2078b.chunk.js",
+    "static/js/2.22e2078b.chunk.js.map": "/static/js/2.22e2078b.chunk.js.map",
+    "static/js/3.ee36f730.chunk.js": "/static/js/3.ee36f730.chunk.js",
+    "static/js/3.ee36f730.chunk.js.map": "/static/js/3.ee36f730.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.76ba7e68.chunk.css.map": "/static/css/main.76ba7e68.chunk.css.map",
+    "static/js/2.22e2078b.chunk.js.LICENSE.txt": "/static/js/2.22e2078b.chunk.js.LICENSE.txt",
+    "static/media/Modal.css": "/static/media/Inconsolata.d436e6cb.ttf",
+    "static/media/App.css": "/static/media/Staatliches-Regular.a7f803c1.ttf",
+    "static/media/Trello.png": "/static/media/Trello.0d980286.png",
+    "static/media/hondalogo.png": "/static/media/hondalogo.48691152.png",
+    "static/media/PageNotFound.css": "/static/media/pageNotFound.c0bc7d0b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e7338c7.js",
+    "static/js/2.22e2078b.chunk.js",
+    "static/css/main.76ba7e68.chunk.css",
+    "static/js/main.103e94d0.chunk.js"
+  ]
+}
