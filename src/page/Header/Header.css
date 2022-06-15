@@ -1,8 +1,9 @@
 .header-container {
   color: #94a4b4;
+  width: 100%;
 }
 .header-content {
-  width: 95%;
+  width: 60%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -23,12 +24,30 @@
   margin-right: 5%;
 }
 .nav-menu a {
-  color: #94a4b4;
+  color: #525962;
   text-decoration: none;
   margin-left: 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: 0.3s;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 .nav-menu a:hover {
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+  }
 }

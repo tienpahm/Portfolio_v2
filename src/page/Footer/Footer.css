@@ -1,20 +1,50 @@
 .footer-container {
-  background-color: #171a1d;
+  /* background-color: #171a1d; */
   color: white;
   width: 100%;
-  padding: 20px 0;
+  background-image: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+  /* position: absolute; */
+  z-index: -1;
 }
+
 .footer-content p {
   font-family: "Times New Roman", Times, serif;
   color: #94a4b4;
   letter-spacing: 1px;
+  z-index: 1;
+  color: #ffff;
 }
 .footer-content p span {
   color: white;
 }
 .footer-content {
-  width: 40%;
+  width: 50%;
   margin: auto;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }

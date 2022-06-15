@@ -1,25 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./page/Home/Home";
-import Header from "./page/Header/Header";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Project from "./page/Project/Project";
 import Footer from "./page/Footer/Footer";
 import ContactMenu from "./page/ContactMenu/ContactMenu";
 import Modal from "./Component/ModalContent/Modal";
+import Test from "./Component/PageNotFound/PageNotFound";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Modal />
-        <Header />
-        <ContactMenu />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/project" component={Project} />
+          {/* <Route exact path="/project" component={Project} /> */}
+          <Route path="*" exact={true} component={Test} />
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

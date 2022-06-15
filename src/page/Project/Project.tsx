@@ -1,62 +1,48 @@
 import React from "react";
+import ProjectContainer from "./components/ProjectContainer";
 import "./Project.css";
 
 export default function Project(props: any) {
-  console.log(props);
-
   return (
     <div className="project-container">
       <div className="project-content">
         <div className="project-title">
-          <h2>Projects</h2>
-          <p>
-            // These are my favorite projects I've worked on for the past year.
-            Have a look around and make sure to hit me up!
-          </p>
+          <h4>Projects</h4>
         </div>
         <div className="projects row">
-          <div className="col-6">
-            <div className="project-items">
+          <ProjectContainer
+            dataTarget="#bugtifyModal"
+            dataToggle="modal"
+            name={
               <p className="bugtify name">
                 BUGTIFY<span>.</span>
               </p>
-              <button
-                className="btn-projects"
-                data-toggle="modal"
-                data-target="#bugtifyModal">
-                <i className="fa fa-eye"></i>View Projects
-              </button>
-            </div>
-          </div>
-          <div className="col-6">
-            <div className="project-items">
-              <p className="honda name">
-                <img
-                  src={require("../../assets/img/hondalogo.png").default}
-                  alt="hondalogo"
-                />
-              </p>
-              <button
-                className="btn-projects"
-                data-toggle="modal"
-                data-target="#hondaModal">
-                <i className="fa fa-eye"></i>View Projects
-              </button>
-            </div>
-          </div>
-          <div className="col-6">
-            <div className="project-items">
-              <p className="portfolio name">
-                <span>T</span>ien
-              </p>
-              <button
-                className="btn-projects"
-                data-toggle="modal"
-                data-target="#portfolioModal">
-                <i className="fa fa-eye"></i>View Projects
-              </button>
-            </div>
-          </div>
+            }
+            altImage="eventlogo"
+            background="project-items-bugitfy"
+          />
+          <ProjectContainer
+            dataTarget="#portfolioModal"
+            dataToggle="modal"
+            src={require("../../assets/img/logo.png").default}
+            altImage="portfoliologo"
+            background="project-items-portfolio"
+          />
+          <ProjectContainer
+            dataTarget="#hondaModal"
+            dataToggle="modal"
+            src={require("../../assets/img/hondalogo.png").default}
+            altImage="hondalogo"
+            background="project-items-honda"
+          />
+          <ProjectContainer
+            dataTarget="#trello"
+            dataToggle="modal"
+            src={require("../../assets/img/Trello.png").default}
+            altImage="trello"
+            background="project-items-trello"
+            buttonName="Coming Soon..."
+          />
         </div>
       </div>
     </div>

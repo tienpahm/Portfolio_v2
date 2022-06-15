@@ -1,0 +1,14 @@
+.pageNotFound {
+    background-image: url(../../assets/img/pageNotFound.png);
+    background-size: cover;
+    color: blue;
+    height: 100vh;
+    position: relative;
+}
+
+.pageNotFoundRedirect {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}

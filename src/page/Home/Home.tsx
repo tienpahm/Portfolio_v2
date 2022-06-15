@@ -1,47 +1,34 @@
-import React, {useState} from "react";
+import React, {Fragment} from "react";
 import "./Home.css";
 
+//COMPONENTS
+import Header from "../Header/Header";
+import Project from "../Project/Project";
+import Footer from "../../page/Footer/Footer";
+import Modal from "../../Component/ModalContent/Modal";
+import ContactMenu from "../ContactMenu/ContactMenu";
+import Overlay from "./Components/Overlay";
+import GreetingText from "./Components/GreetingText";
+
 export default function Home(props: any) {
-  const paragraph =
-    "I'M A FRONT END DEVELOPER & WEB DESIGNER CURRENTLY BASED IN SYDNEY HIT ME UP AND LET CREATE SOMETHING SPECIAL";
-  const [charState, setcharState] = useState("");
-  //   let activeChar = "char-sub";
-  let tien = "dep trai";
-
+  
   return (
-    <div className="home">
-      <div className="home-content">
-        <div className="greeting">
-          <p> Hi , I AM TIEN , NICE TO MEET YOU</p>
+    <Fragment>
+      <div
+        style={{
+          backgroundImage:
+            "linear-gradient(to top right,#450b7c,#563cc9,#49e9fb)",
+        }}>
+        <div className="home">
+          <Header />
+          <Overlay/>
+          <GreetingText/>
         </div>
-
-        <div className="introduction">
-          {paragraph.split(" ").map((item, index) => {
-            return (
-              <div className="char" key={index}>
-                <div
-                  className={`char-main`}
-                  onMouseEnter={(e) => {
-                    (e.target as Element).className += " active";
-                    setTimeout(() => {
-                      (e.target as Element).className = "char-main";
-                    }, 3000);
-                  }}>
-                  {item}
-                </div>
-                <div className={`char-sub`}>{item}</div>
-              </div>
-            );
-          })}
-        </div>
-        <button
-          className="btn-project"
-          onClick={() => {
-            props.history.push("/project");
-          }}>
-          VIEW PROJECT
-        </button>
       </div>
-    </div>
+      <Modal />
+      <ContactMenu />
+      <Project />
+      <Footer />
+    </Fragment>
   );
 }
